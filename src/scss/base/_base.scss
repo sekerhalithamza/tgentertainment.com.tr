@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  width: 100vw;
+  height: fit-content;
+  scroll-behavior: smooth;
+  font-size: 62.5%; // 1rem = 10px
+  font-family: "Spectral", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: fit-content;
+  font-size: 1.6rem;
+}
+
+.main {
+  width: 100%;
+  height: fit-content;
+}
+
+.section {
+  width: 100%;
+  height: fit-content;
+}

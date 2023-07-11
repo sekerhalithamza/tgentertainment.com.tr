@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  height: 7vh;
+  background-color: map-get($colors, primary-light);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding-inline: 1rem;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 100%;
+    width: fit-content;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+
+    &-item {
+      width: auto;
+      height: 70%;
+      aspect-ratio: 1/1;
+
+      &:nth-child(2) {
+        .footer__list-item--link svg {
+          fill: transparent;
+          stroke-width: 0.4rem;
+          stroke: map-get($colors, light);
+        }
+      }
+
+      &--link {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: end;
+
+        svg {
+          display: inline-block;
+          aspect-ratio: 1/1;
+          height: 3rem;
+          width: auto;
+          fill: map-get($colors, light);
+          stroke: transparent;
+        }
+      }
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: map-get($colors, light);
+    align-self: center;
+  }
+}

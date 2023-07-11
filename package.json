@@ -1,0 +1,31 @@
+{
+  "name": "tgentertainment.com.tr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all copy --parallel watch serve",
+    "copy": "npm-run-all --parallel copy:*",
+    "copy:html": "copyfiles -u 1 ./src/*.html dist",
+    "copy:js": "copyfiles -u 1 ./src/js/*.js dist",
+    "copy:assets": "copyfiles -u 1 ./src/assets/**/* dist",
+    "watch:assets": "onchange \"src/assets/**/*\" -- npm run copy:assets",
+    "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
+    "watch:sass": "sass  --no-source-map --watch src/scss:dist/css",
+    "watch:js": "onchange \"src/js/*.js\" -- npm run copy:js",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server dist --files dist --mimeTypes \"text/html,text/css,application/javascript\"",
+    "build": "npm-run-all copy --parallel build:*",
+    "build:sass": "sass  --no-source-map src/sass:dist/css",
+    "predeploy": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "sass": "^1.49.8"
+  }
+}
