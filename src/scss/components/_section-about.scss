@@ -1,5 +1,20 @@
 .section-about {
-  background-image: url("../assets/section-hero-3.webp");
   padding: 10rem;
   background-color: map-get($colors, background);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &--img {
+    width: 50%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: right;
+    width: 40%;
+  }
+  &--title {
+    color: map-get($colors, primary);
+  }
 }
