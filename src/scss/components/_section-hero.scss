@@ -13,7 +13,24 @@
     transition: all 500ms ease;
     display: flex;
     align-items: center;
-    padding-inline-start: 25rem;
+
+    &:nth-child(odd) {
+      justify-content: flex-start;
+      .section-hero__container--text {
+        width: 30%;
+        height: fit-content;
+        margin-inline-start: 15rem;
+      }
+    }
+
+    &:nth-child(even) {
+      justify-content: flex-end;
+      .section-hero__container--text {
+        width: 30%;
+        height: fit-content;
+        margin-inline-end: 15rem;
+      }
+    }
 
     &:nth-child(2) {
       background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -37,9 +54,8 @@
     }
     &--text {
       display: inline-block;
-      color: map-get($colors, light);
+      color: map-get($colors, text-light);
       text-align: center;
-      width: 40%;
       background-color: rgba(map-get($colors, primary), 0.7);
       padding-inline: 5rem;
       padding-block: 4rem;
@@ -49,8 +65,8 @@
 
   &--chevron {
     position: absolute;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     background-color: map-get($colors, light);
     border-radius: 100%;
     top: 50%;
@@ -62,7 +78,7 @@
 
     &:hover {
       cursor: pointer;
-      transform: translateY(-50%) scale(1.2);
+      transform: translateY(-50%) scale(1.1);
     }
 
     &:nth-child(1) {

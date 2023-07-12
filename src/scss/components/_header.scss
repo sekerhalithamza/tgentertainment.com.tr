@@ -11,11 +11,12 @@
   z-index: 5;
 
   &-logo {
+    padding-block: 1rem;
     width: fit-content;
     height: fit-content;
 
     &--src {
-      height: 8rem;
+      height: 7rem;
       aspect-ratio: 1/1;
       width: auto;
     }
@@ -39,7 +40,7 @@
 
       &--link {
         text-decoration: none;
-        color: map-get($colors, light);
+        color: map-get($colors, text-light);
         font-size: map-get($font-sizes, m);
       }
     }
@@ -47,7 +48,7 @@
 
   &--language-btn {
     background-color: map-get($colors, primary);
-    color: map-get($colors, light);
+    color: map-get($colors, text-light);
     aspect-ratio: 1/1;
     height: 100%;
     width: auto;

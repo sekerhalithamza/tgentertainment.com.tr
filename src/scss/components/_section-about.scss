@@ -1,20 +1,33 @@
 .section-about {
-  padding: 10rem;
+  padding-inline: 10rem;
+  padding-block: 10rem;
   background-color: map-get($colors, background);
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   &--img {
     width: 50%;
   }
+
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: start;
     text-align: right;
-    width: 40%;
+    width: 30%;
   }
+
   &--title {
     color: map-get($colors, primary);
+    font-weight: map-get($font-weights, semi-bold);
+    font-size: map-get($font-sizes, xxxl);
+    padding-bottom: 2rem;
+  }
+
+  &--text {
+    font-size: map-get($font-sizes, l);
+    color: map-get($colors, text-dark);
   }
 }
