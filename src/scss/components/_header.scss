@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: map-get($colors, primary-light);
+  background-color: transparent;
   padding-inline-start: 2rem;
   z-index: 5;
 
@@ -16,7 +16,7 @@
     height: fit-content;
 
     &--src {
-      height: 7rem;
+      height: 30rem;
       aspect-ratio: 1/1;
       width: auto;
     }
@@ -32,7 +32,7 @@
     &-item {
       width: fit-content;
       height: 100%;
-      transition: border 300ms ease;
+      transition: border 200ms ease;
 
       &:hover {
         border-bottom: 0.2rem map-get($colors, light) solid;
@@ -41,7 +41,7 @@
       &--link {
         text-decoration: none;
         color: map-get($colors, text-light);
-        font-size: map-get($font-sizes, m);
+        font-size: map-get($font-sizes, l);
       }
     }
   }

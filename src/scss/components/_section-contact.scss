@@ -1,52 +1,82 @@
 .section-contact {
+  height: fit-content;
+  background-color: map-get($colors, background);
   display: flex;
   flex-direction: column;
-  list-style: none;
-  width: 100%;
-  background-color: map-get($colors, primary);
-  color: map-get($colors, text-light);
-  padding-block: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  padding-inline: 5rem;
+  padding-block: 4rem;
 
   &--title {
-    text-align: center;
-    font-size: map-get($font-sizes, xxl);
-  }
-  &__container {
-    padding: 5rem 4rem 3rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
+    color: map-get($colors, dark);
+    font-size: map-get($font-sizes, xxxl);
+    font-weight: map-get($font-weights, medium);
+    padding-block: 3rem;
   }
 
-  &--link {
-    display: inline-flex;
-    align-items: center;
-    gap: 3rem;
-    color: map-get($colors, text-light);
-    &:link {
-      text-decoration: none;
-      color: map-get($colors, text-light);
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+
+    &--img {
+      height: 30rem;
+      width: 100%;
+      object-fit: cover;
+      align-self: center;
     }
-    &__wrapper {
-      &:nth-child(3) {
-        svg {
-          fill: map-get($colors, text-light);
-          stroke: none;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      width: 46%;
+      height: fit-content;
+      gap: 2rem;
+      &--title {
+        color: map-get($colors, dark);
+        text-align: left;
+        font-size: map-get($font-sizes, xl);
+        font-weight: map-get($font-weights, regular);
+      }
+
+      &__list {
+        list-style: none;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &-item {
+          height: fit-content;
+          width: fit-content;
+
+          &-link {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: map-get($colors, dark);
+            text-decoration: none;
+            gap: 2rem;
+
+            span {
+              font-weight: map-get($font-weights, semi-bold);
+              font-size: map-get($font-sizes, base);
+              width: fit-content;
+            }
+
+            svg {
+              height: 3rem;
+              aspect-ratio: 1/1;
+              width: auto;
+              stroke: transparent;
+              fill: map-get($colors, dark);
+            }
+          }
         }
       }
-      &:nth-child(1) {
-        svg {
-          stroke-width: 2px;
-        }
-      }
     }
-  }
-  &--svg {
-    width: 4rem;
-    height: 4rem;
-    stroke: map-get($colors, text-light);
-    stroke-width: 0.9px;
-    fill: none;
   }
 }
