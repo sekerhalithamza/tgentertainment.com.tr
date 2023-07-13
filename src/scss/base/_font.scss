@@ -1,10 +1,13 @@
 @font-face {
-  font-family: "TexGyreBonum";
-  src: url(/fonts/texgyrebonum-regular.ttf);
+  font-family: "Montserrat";
+  src: url(/src/fonts/Montserrat-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
-/*
-.harlow {
-  font-family: "myFirstFont";
+@font-face {
+  font-family: "Oswald";
+  src: url(/src/fonts/Oswald-VariableFont_wght.ttf);
+  font-weight: bold;
+  font-style: normal;
 }
-*/

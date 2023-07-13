@@ -27,6 +27,7 @@
 
       .section-hero__container--title {
         margin-inline-start: 20rem;
+        text-align: left;
       }
     }
 
@@ -36,31 +37,53 @@
         width: 40%;
         height: fit-content;
         margin-inline-end: 15rem;
+        text-align: right;
       }
 
       .section-hero__container--title {
         margin-inline-end: 20rem;
+        text-align: right;
       }
     }
 
     &:nth-child(2) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+      background-image: linear-gradient(
+          to right,
+          rgba(map-get($colors, primary-light), 0),
+          rgba(map-get($colors, primary-light), 0.8)
+        ),
         url(/assets/section-hero-1.webp);
     }
     &:nth-child(3) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+      background-image: linear-gradient(
+          to right,
+          rgba(map-get($colors, primary-light), 0.8),
+          rgba(map-get($colors, primary-light), 0)
+        ),
         url(/assets/section-hero-2.webp);
     }
     &:nth-child(4) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+      background-image: linear-gradient(
+          to right,
+          rgba(map-get($colors, primary-light), 0),
+          rgba(map-get($colors, primary-light), 0.8)
+        ),
         url(/assets/section-hero-3.webp);
     }
     &:nth-child(5) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+      background-image: linear-gradient(
+          to right,
+          rgba(map-get($colors, primary-light), 0.8),
+          rgba(map-get($colors, primary-light), 0)
+        ),
         url(/assets/section-hero-4.webp);
     }
     &:nth-child(6) {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+      background-image: linear-gradient(
+          to right,
+          rgba(map-get($colors, primary-light), 0),
+          rgba(map-get($colors, primary-light), 0.8)
+        ),
         url(/assets/section-hero-5.webp);
     }
     &--text {
@@ -69,13 +92,20 @@
       text-align: right;
       padding-inline: 5rem;
       padding-block: 4rem;
-      font-size: map-get($font-sizes, m);
+      font-size: map-get($font-sizes, xl);
     }
 
     &--title {
-      font-size: map-get($font-sizes, xxl);
+      font-size: 11rem;
       color: map-get($colors, light);
-      font-weight: map-get($font-weights, regular);
+      font-weight: map-get($font-weights, semi-bold);
+      word-wrap: break-word;
+      line-height: 90%;
+      font-family: "Oswald", sans-serif;
+      letter-spacing: -0.5rem;
+      &-blue {
+        color: map-get($colors, primary);
+      }
     }
   }
 
