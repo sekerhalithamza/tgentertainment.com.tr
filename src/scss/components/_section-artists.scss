@@ -1,0 +1,46 @@
+.section-artists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
+  column-gap: 10rem;
+  padding-inline: 15rem;
+  margin-bottom: 5rem;
+
+  &--title {
+    grid-column: 1 / 4 span;
+    text-align: center;
+    font-size: map-get($font-sizes, xxxl);
+    color: map-get($colors, primary);
+    margin-block-end: 5rem;
+  }
+
+  &__content {
+    height: max(fit-content, 40rem);
+    background-color: map-get($colors, accent);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 3rem;
+
+    &--img {
+      height: 30rem;
+      width: auto;
+      border-radius: 1.5rem;
+      object-fit: cover;
+      object-position: 20%;
+    }
+    &--text {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      font-size: map-get($font-sizes, xxl);
+      font-weight: map-get($font-weights, semi-bold);
+    }
+    &-link {
+      display: inline-flex;
+    }
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

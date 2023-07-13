@@ -8,7 +8,8 @@
 
   &--title {
     font-size: map-get($font-sizes, xxxl);
-    color: map-get($colors, dark);
+    color: map-get($colors, primary);
+    margin-bottom: 3rem;
   }
 
   &__container {
@@ -18,6 +19,7 @@
     width: 100%;
     column-gap: 10%;
     padding-inline: 10rem;
+    margin-bottom: 2rem;
 
     &-content {
       background-image: url(/assets/section-services-1.webp);
@@ -31,9 +33,9 @@
       align-items: center;
 
       &:hover {
+        cursor: pointer;
         .section-services__container-content-wrapper {
           &--text {
-            display: inline;
             animation-name: open;
             animation-duration: 500ms;
           }

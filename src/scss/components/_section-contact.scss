@@ -9,9 +9,9 @@
   padding-block: 4rem;
 
   &--title {
-    color: map-get($colors, dark);
+    color: map-get($colors, primary);
     font-size: map-get($font-sizes, xxxl);
-    font-weight: map-get($font-weights, medium);
+    font-weight: map-get($font-weights, semi-bold);
     padding-block: 3rem;
   }
 
@@ -37,8 +37,8 @@
       &--title {
         color: map-get($colors, dark);
         text-align: left;
-        font-size: map-get($font-sizes, xl);
-        font-weight: map-get($font-weights, regular);
+        font-size: map-get($font-sizes, xxxl);
+        font-weight: map-get($font-weights, semi-bold);
       }
 
       &__list {
@@ -63,7 +63,7 @@
 
             span {
               font-weight: map-get($font-weights, semi-bold);
-              font-size: map-get($font-sizes, base);
+              font-size: map-get($font-sizes, m);
               width: fit-content;
             }
 

@@ -17,6 +17,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 8;
+    transition: ease 0.5s all;
   }
   &.active {
     background-color: rgba(map-get($colors, light), 0.7);
