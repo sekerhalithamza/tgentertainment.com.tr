@@ -23,10 +23,10 @@ for (const btn of chevronBtns) {
   btn.addEventListener("click", function () {
     let direction = btn.getAttribute("data-direction");
     if (direction === "left") {
-      if (imagePosition >= 0) imagePosition = -400;
+      if (imagePosition >= 0) imagePosition = -200;
       else imagePosition += 100;
     } else {
-      if (imagePosition <= -400) imagePosition = 0;
+      if (imagePosition <= -200) imagePosition = 0;
       else imagePosition -= 100;
     }
     for (const image of images) {
@@ -56,6 +56,12 @@ for (const container of serviceContainers) {
 
 popUp.addEventListener("click", (event) => {
   if (!event.target.closest(".popup__content")) {
+    popUp.classList.remove("active");
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" || event.key === "Esc") {
     popUp.classList.remove("active");
   }
 });
