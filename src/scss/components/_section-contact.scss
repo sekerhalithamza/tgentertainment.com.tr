@@ -7,12 +7,13 @@
   justify-content: space-around;
   padding-inline: 5rem;
   padding-block: 4rem;
+  gap: 4em;
 
   &--title {
     color: map-get($colors, primary);
-    font-size: map-get($font-sizes, xxxl);
+    font-size: 6rem;
     font-weight: map-get($font-weights, semi-bold);
-    padding-block: 3rem;
+    padding-top: 2rem;
   }
 
   &__container {

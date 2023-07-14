@@ -16,8 +16,7 @@
     height: fit-content;
 
     &--src {
-      height: 30rem;
-      aspect-ratio: 1/1;
+      height: 8rem;
       width: auto;
     }
   }
@@ -37,18 +36,6 @@
       &:hover {
         border-bottom: 0.2rem map-get($colors, light) solid;
         position: relative;
-        ::after {
-          position: absolute;
-          content: "";
-          top: 0;
-          left: 0;
-          background-color: white;
-          width: 120%;
-          height: 400%;
-          z-index: 3;
-          transform: translateY(-50%) translateX(-10%);
-          z-index: 2;
-        }
       }
 
       &--link {

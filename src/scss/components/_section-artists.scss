@@ -2,29 +2,42 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 5rem;
-  column-gap: 15rem;
+  column-gap: 10%;
   padding-inline: 15rem;
   margin-bottom: 5rem;
 
   &--title {
     grid-column: 1 / 3 span;
     text-align: center;
-    font-size: map-get($font-sizes, xxxl);
+    font-size: 6rem;
     color: map-get($colors, primary);
     margin-block-end: 5rem;
   }
 
   &__content {
-    height: max(fit-content, 40rem);
-    background-color: map-get($colors, accent);
+    height: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5rem;
+    padding: 3rem;
     border-radius: 3rem;
 
+    &.card-blue {
+      background-color: #b7cae8;
+    }
+    &.card-yellow {
+      background-color: #fff6c6;
+    }
+    &.card-red {
+      background-color: #fac7c7;
+    }
+    &.card-golden {
+      background-color: #e8d1b7;
+    }
+
     &--img {
-      height: 30rem;
-      width: auto;
+      height: 45rem;
+      width: 100%;
       border-radius: 1.5rem;
       object-fit: cover;
       object-position: top;
@@ -40,12 +53,27 @@
       background-image: linear-gradient(to right, #ff9c07, #9d00c4);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
-      font-size: map-get($font-sizes, m);
+      font-size: map-get($font-sizes, l);
+      font-weight: map-get($font-weights, medium);
       align-items: center;
+      gap: 1.3rem;
+      transition: opacity 300ms ease;
+      padding-bottom: 0.5rem;
+
+      &:hover {
+        padding-bottom: 0.1rem;
+        border-image: linear-gradient(to right, rgb(255, 156, 7), rgb(157, 0, 196));
+        border-width: 0.5rem;
+        border-image-slice: 1;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-style: solid;
+      }
     }
     svg {
-      width: 3rem;
-      height: 3rem;
+      width: 3.5rem;
+      height: 3.5rem;
     }
   }
 }

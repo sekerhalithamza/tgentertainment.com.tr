@@ -22,12 +22,12 @@
   &--title {
     color: map-get($colors, primary);
     font-weight: map-get($font-weights, semi-bold);
-    font-size: map-get($font-sizes, xxxl);
+    font-size: 6rem;
     padding-bottom: 2rem;
   }
 
   &--text {
-    font-size: map-get($font-sizes, l);
+    font-size: map-get($font-sizes, xl);
     color: map-get($colors, text-dark);
   }
 }

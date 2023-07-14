@@ -4,12 +4,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-block: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
 
   &--title {
-    font-size: map-get($font-sizes, xxxl);
+    font-size: 6rem;
     color: map-get($colors, primary);
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   &__container {
@@ -31,6 +32,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &.event {
+        background-image: url(/assets/event.webp);
+      }
 
       &:hover {
         cursor: pointer;

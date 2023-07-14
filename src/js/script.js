@@ -6,6 +6,8 @@ const chevronBtns = document.getElementsByClassName("section-hero--chevron");
 const images = document.getElementsByClassName("section-hero__container");
 const serviceContainers = document.getElementsByClassName("section-services__container-content");
 const popUp = document.getElementById("popUp");
+const gallery = document.getElementById("gallery");
+const galleryBtns = document.getElementsByClassName("section-references--chevron");
 
 languageBtn.addEventListener("click", function () {
   for (const element of textElements) {
@@ -57,3 +59,21 @@ popUp.addEventListener("click", (event) => {
     popUp.classList.remove("active");
   }
 });
+
+var galleryPosition = 0;
+
+// Min vw: translatex(300vw)
+// Max vw: translateX(300vw)
+for (let btn of galleryBtns) {
+  btn.addEventListener("click", function () {
+    let direction = btn.getAttribute("data-direction");
+    if (direction === "right")
+      if (galleryPosition <= -300) {
+        galleryPosition *= -1;
+      } else galleryPosition -= 25;
+    else if (galleryPosition >= 300) {
+      galleryPosition *= -1;
+    } else galleryPosition += 25;
+    gallery.style.transform = `translateX(-50%) translateY(-50%) translateX(${galleryPosition}vw)`;
+  });
+}
