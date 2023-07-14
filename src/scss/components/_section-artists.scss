@@ -2,12 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 5rem;
-  column-gap: 10rem;
+  column-gap: 15rem;
   padding-inline: 15rem;
   margin-bottom: 5rem;
 
   &--title {
-    grid-column: 1 / 4 span;
+    grid-column: 1 / 3 span;
     text-align: center;
     font-size: map-get($font-sizes, xxxl);
     color: map-get($colors, primary);
@@ -19,7 +19,7 @@
     background-color: map-get($colors, accent);
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 5rem;
     border-radius: 3rem;
 
     &--img {
@@ -27,7 +27,7 @@
       width: auto;
       border-radius: 1.5rem;
       object-fit: cover;
-      object-position: 20%;
+      object-position: top;
     }
     &--text {
       margin-top: 2rem;
@@ -37,10 +37,15 @@
     }
     &-link {
       display: inline-flex;
+      background-image: linear-gradient(to right, #ff9c07, #9d00c4);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: map-get($font-sizes, m);
+      align-items: center;
     }
     svg {
-      width: 2rem;
-      height: 2rem;
+      width: 3rem;
+      height: 3rem;
     }
   }
 }
