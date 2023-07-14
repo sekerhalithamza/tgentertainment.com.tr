@@ -37,6 +37,14 @@
         background-image: url(/assets/event.webp);
       }
 
+      &.pr {
+        background-image: url(/assets/pr.webp);
+      }
+
+      &.booking {
+        background-image: url(/assets/booking.webp);
+      }
+
       &:hover {
         cursor: pointer;
         .section-services__container-content-wrapper {
