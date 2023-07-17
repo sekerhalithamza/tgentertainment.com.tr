@@ -87,4 +87,5 @@ for (let btn of galleryBtns) {
 // Autoslide (in ms)
 window.setInterval(() => {
   chevronBtns[1].click();
+  galleryBtns[1].click();
 }, 3000);
