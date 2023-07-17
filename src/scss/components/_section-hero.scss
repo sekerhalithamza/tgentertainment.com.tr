@@ -68,23 +68,7 @@
           rgba(map-get($colors, primary-light), 0),
           rgba(map-get($colors, primary-light), 0.8)
         ),
-        url(/assets/section-hero-3.webp);
-    }
-    &:nth-child(5) {
-      background-image: linear-gradient(
-          to right,
-          rgba(map-get($colors, primary-light), 0.8),
-          rgba(map-get($colors, primary-light), 0)
-        ),
-        url(/assets/section-hero-4.webp);
-    }
-    &:nth-child(6) {
-      background-image: linear-gradient(
-          to right,
-          rgba(map-get($colors, primary-light), 0),
-          rgba(map-get($colors, primary-light), 0.8)
-        ),
-        url(/assets/section-hero-5.webp);
+        url(/assets/konser.webp);
     }
     &--text {
       display: inline-block;
