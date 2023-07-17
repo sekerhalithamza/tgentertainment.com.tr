@@ -83,3 +83,8 @@ for (let btn of galleryBtns) {
     gallery.style.transform = `translateX(-50%) translateY(-50%) translateX(${galleryPosition}vw)`;
   });
 }
+
+// Autoslide (in ms)
+window.setInterval(() => {
+  chevronBtns[1].click();
+}, 3000);
