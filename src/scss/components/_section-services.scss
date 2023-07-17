@@ -45,6 +45,14 @@
         background-image: url(/assets/booking.webp);
       }
 
+      &.festival {
+        background-image: url(/assets/festival.webp);
+      }
+
+      &.konsept {
+        background-image: url(/assets/konsept.webp);
+      }
+
       &:hover {
         cursor: pointer;
         .section-services__container-content-wrapper {
