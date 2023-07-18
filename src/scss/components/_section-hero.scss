@@ -10,7 +10,7 @@
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 500ms ease;
+    transition: transform 500ms ease;
     display: flex;
     font-size: map-get($font-sizes, m);
     flex-direction: column;
@@ -19,7 +19,7 @@
     &:nth-child(odd) {
       align-items: flex-start;
       .section-hero__container--text {
-        width: 40%;
+        width: 55%;
         height: fit-content;
         margin-inline-start: 15rem;
         text-align: left;
@@ -34,7 +34,7 @@
     &:nth-child(even) {
       align-items: flex-end;
       .section-hero__container--text {
-        width: 40%;
+        width: 55%;
         height: fit-content;
         margin-inline-end: 15rem;
         text-align: right;
@@ -95,13 +95,12 @@
 
   &--chevron {
     position: absolute;
-    width: 8rem;
-    height: 8rem;
+    width: 5vw;
+    height: 5vw;
     background-color: map-get($colors, light);
     border-radius: 100%;
     top: 50%;
     padding: 2rem;
-    transform: translateY(-50%);
     z-index: 4;
     transition: all 250ms ease;
     transform-origin: center;
@@ -112,11 +111,13 @@
     }
 
     &:nth-child(1) {
-      left: 2vw;
+      left: 0;
+      transform: translateY(-50%) translateX(50%);
     }
 
-    &:nth-child(5) {
-      left: 93vw;
+    &:last-child {
+      left: 100vw;
+      transform: translateY(-50%) translateX(-150%);
     }
 
     svg {

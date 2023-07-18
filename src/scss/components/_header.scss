@@ -13,10 +13,9 @@
   &-logo {
     padding-block: 1rem;
     width: fit-content;
-    height: fit-content;
-
+    height: 110%;
     &--src {
-      height: 8rem;
+      height: 100%;
       width: auto;
     }
   }
@@ -49,7 +48,6 @@
   &--language-btn {
     background-color: transparent;
     color: map-get($colors, text-light);
-    aspect-ratio: 1/1;
     height: 100%;
     width: auto;
     font-size: map-get($font-sizes, l);

@@ -1,0 +1,91 @@
+@media (max-width: 1440px) {
+  .header {
+    height: 9vh;
+  }
+
+  .section-about--text {
+    font-size: map-get($font-sizes, m);
+  }
+
+  .section-about--title {
+    font-size: 5rem;
+  }
+
+  .section-services__container {
+    column-gap: 5%;
+  }
+
+  .section-services--title {
+    font-size: 5rem;
+  }
+
+  .section-artists--title {
+    font-size: 5rem;
+  }
+
+  .section-artists {
+    column-gap: 5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-hero__container {
+    align-items: center !important;
+    justify-content: center;
+    text-align: center;
+
+    &--title,
+    &--text {
+      text-align: center !important;
+      margin: 0 !important;
+    }
+  }
+  .header {
+    height: 7vh;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 43.75%;
+  }
+  .header__list {
+    display: none;
+  }
+
+  .section-services__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-artists {
+    padding-inline: 5rem;
+  }
+  .section-artists__content {
+    padding: 2rem;
+  }
+  .section-hero--chevron {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-hero--chevron {
+    width: 5rem;
+    height: 5rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-hero--chevron {
+    width: 5rem;
+    height: 5rem;
+    padding: 0.6rem;
+  }
+}
