@@ -6,6 +6,7 @@
   text-align: center;
   padding-top: 6rem;
   padding-bottom: 8rem;
+  padding-inline: 10rem;
 
   &--title {
     font-size: 6rem;
@@ -19,7 +20,6 @@
     row-gap: 5rem;
     width: 100%;
     column-gap: 10%;
-    padding-inline: 10rem;
     margin-bottom: 2rem;
 
     &-content {
@@ -51,6 +51,10 @@
 
       &.konsept {
         background-image: url(/assets/konsept.webp);
+      }
+
+      &.production {
+        background-image: url(/assets/konser.webp);
       }
 
       &:hover {

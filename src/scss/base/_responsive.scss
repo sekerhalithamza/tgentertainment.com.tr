@@ -80,6 +80,96 @@
     height: 5rem;
     padding: 0.7rem;
   }
+  .section-hero__container {
+    &--text {
+      width: 70% !important;
+      padding: 0;
+      font-size: map-get($font-sizes, l);
+    }
+    &--title {
+      font-size: map-get($font-sizes, xxxl);
+      padding-bottom: 3rem;
+    }
+  }
+  .section-about {
+    flex-direction: column;
+    &__content {
+      width: 100%;
+    }
+    &--title {
+      width: 100%;
+      text-align: center;
+      padding-top: 3rem;
+    }
+    &--img {
+      width: 100%;
+    }
+    &--text {
+      text-align: center;
+    }
+  }
+  .section-services {
+    padding-inline: 3rem;
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .section-artists {
+    padding-inline: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    width: 100%;
+    height: fit-content;
+    column-gap: 0;
+    row-gap: 0;
+    padding-top: 2rem;
+    row-gap: 3rem;
+    &--title {
+      grid-column: 1/1 span;
+      padding-bottom: 2rem;
+    }
+    &__content {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .section-references--chevron {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.7rem;
+  }
+  .section-references--chevron:first-child {
+    left: 1rem;
+  }
+  .section-references--chevron:last-child {
+    left: 89vw;
+  }
+  .section-references__container__content {
+    height: 30rem;
+  }
+  .section-references--img {
+    width: 25rem;
+    height: auto;
+  }
+  .section-contact__container {
+    grid-template-columns: 1fr;
+    &-content {
+      padding-bottom: 4rem;
+    }
+  }
+  .footer__list-item--link svg {
+    height: 100%;
+  }
+  .footer__list-item {
+    width: 2.5rem;
+    height: auto;
+  }
+  .footer__list {
+    gap: 0.7rem;
+  }
+  .footer-text {
+    text-align: right;
+  }
 }
 
 @media (max-width: 320px) {
