@@ -1,6 +1,6 @@
 @media (max-width: 1440px) {
   .header {
-    height: 9vh;
+    height: 8rem;
   }
 
   .section-about--text {
@@ -25,6 +25,20 @@
 
   .section-artists {
     column-gap: 5%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    padding-top: 1rem;
+    height: 6rem;
+    padding-inline: 1rem;
+  }
+  .header-logo {
+    padding-block: 0.1rem;
+  }
+  .header__list-item--link {
+    font-size: map-get($font-sizes, m);
   }
 }
 
@@ -72,9 +86,44 @@
     height: 6rem;
     padding: 1rem;
   }
+  .section-hero__container--title {
+    font-size: 7rem;
+    width: 90%;
+  }
+  .section-hero__container .section-hero__container--text {
+    width: 65% !important;
+  }
+  .section-about__content {
+    text-align: center;
+  }
+  .section-artists {
+    padding-inline: 4rem;
+    column-gap: 0;
+    &__content {
+      width: 90%;
+      justify-self: center;
+    }
+  }
+  .section-about,
+  .section-services {
+    padding-inline: 5rem;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 675px) {
+  .section-artists {
+    grid-template-columns: 1fr 1fr;
+    &--title {
+      grid-column: 1/2 span;
+    }
+    &__content {
+      width: 90%;
+      justify-self: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
   .section-hero--chevron {
     width: 5rem;
     height: 5rem;
