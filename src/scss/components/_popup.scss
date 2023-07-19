@@ -34,20 +34,20 @@
         width: 100%;
         text-align: center;
         color: map-get($colors, light);
-        font-size: map-get($font-sizes, xl);
+        font-size: map-get($font-sizes, l);
       }
       &--text {
         width: 100%;
         height: fit-content;
         text-align: center;
         color: map-get($colors, light);
-        font-size: map-get($font-sizes, xl);
+        font-size: map-get($font-sizes, l);
         & br {
           display: none; // Get rid of spaces
         }
       }
       &--img {
-        width: 30%;
+        width: 45%;
         height: min-content;
       }
     }

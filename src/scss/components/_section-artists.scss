@@ -23,9 +23,10 @@
     flex-direction: column;
     padding: 3rem;
     border-radius: 3rem;
+    background-color: #3a4f91 !important;
 
     &.card-blue {
-      background-color: #b7cae8;
+      background-color: #233552;
     }
     &.card-yellow {
       background-color: #fff6c6;
@@ -45,6 +46,7 @@
       object-position: top;
     }
     &--text {
+      color: map-get($colors, "text-light-2");
       margin-top: 2rem;
       margin-bottom: 4rem;
       font-size: map-get($font-sizes, xxl);

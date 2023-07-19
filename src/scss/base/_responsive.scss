@@ -28,6 +28,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .popup__content {
+    width: 60%;
+  }
+}
+
 @media (max-width: 1100px) {
   .header {
     padding-top: 1rem;
@@ -60,6 +66,12 @@
   }
   .header {
     height: 7vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .popup__content {
+    width: 70%;
   }
 }
 
@@ -218,6 +230,12 @@
   }
   .footer-text {
     text-align: right;
+  }
+  .popup__content {
+    width: 80%;
+  }
+  .popup.active .popup__content--text {
+    font-size: map-get($font-sizes, m);
   }
 }
 
